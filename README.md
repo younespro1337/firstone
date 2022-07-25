@@ -120,3 +120,230 @@ first one project test
         
     </body>
 </html>
+
+   file .css
+   :root{
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303041;
+
+}
+
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: var(--main-white);
+
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    list-style-type: auto;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+}
+
+a:hover{
+    color:skyblue;
+    margin-right: 10px;
+    border-radius: 10%;
+    font-weight: bold;
+    box-shadow: #3a3d40;
+
+    
+}
+
+
+.nav{
+   background-color:red;
+   top: 0;
+   justify-content: center; 
+   border-radius: 12px;
+}
+.nav-list{
+    color: red;
+    padding: 20px;
+
+}
+.fix{
+    color: black;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+.fix:hover{
+    color: var(--main-blue);
+    background-color: whitesmoke;
+    border-radius:2px red 70%;
+    margin-right: 1px;
+    padding: auto;
+}
+
+
+.welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+
+}
+h1{
+    color: azure;
+    justify-content: space-between;
+
+    display: block;
+    font-size: 6rem;
+}
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+
+}
+/* *, *::before, *::after{
+    box-sizing: inherit;
+
+} */
+
+.projects-section{
+    text-align: center;
+    padding: 10rem 2rem;
+    background: black;
+
+}
+.projects-section-header{
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var( --main-white);
+}
+
+h2{
+    font-size: 4.2rem;
+
+}
+
+.projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.projects{
+    background: var(--main-gray);
+    box-shadow: 1px 1px 2px rgba(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: inline;
+    justify-content: space-between;
+
+}
+.project-image{
+    height: calc(100 - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+
+}
+
+img{
+    display: flex;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.code{
+    color: black;
+    transition: color 0.3s ease-out;
+
+}
+
+p.project-title{
+    height: 100%;
+    width: 100%;
+    background-color: #f9f5f5;
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: var(--main-gray);
+    border-radius: 40px;
+
+}
+.fab{
+    font-family: "Font Awesome 5 Brands";
+}
+
+/* #header{
+    padding-top: 20px;
+    position: sticky;
+    top: 0;
+    justify-content:space-between;
+} */
+.contact-details{
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+@media (max-width:768px) {
+    p{
+        width: 80%;
+    }
+    
+}
+
+p{
+    padding-top: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: whitesmoke;
+    width: 80%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+strong:hover{
+    color: black;
+    background-color: whitesmoke;
+    margin: 1px;
+    border-radius: 50%;
+}
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
+}
+
+footer p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+    color: #181719;
+    background-color: rgb(230, 223, 237);
+    border-radius: 30px;
+}
+
+
+   
